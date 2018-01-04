@@ -328,6 +328,11 @@
     <Compile Include="Business\Initialization\DisplayRegistryInitialization.cs" />
     <Compile Include="Business\Initialization\FilterConfig.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="ExtendedSettings\CustomOnPageEditInitializer.cs" />
+    <Compile Include="ExtendedSettings\ExtendedSettingsInitialization.cs" />
+    <Compile Include="ExtendedSettings\HeaderColumn.cs" />
+    <Compile Include="ExtendedSettings\OpeHeaderPropertiesMetadataExtender.cs" />
+    <Compile Include="ExtendedSettings\OpeHeadingPropertyAttribute.cs" />
     <Compile Include="Models\Pages\ISearchPage.cs" />
     <Compile Include="Business\PageViewContextFactory.cs" />
     <Compile Include="Business\Rendering\ErrorHandlingContentRenderer.cs" />
@@ -408,6 +413,9 @@
     <Content Include="favicon.ico" />
     <None Include="Models\Blocks\_ReadMe.txt" />
     <None Include="Models\Pages\_ReadMe.txt" />
+    <Content Include="modules\extendedHeader\scripts\ExtendedMetadataTransformer.js" />
+    <Content Include="modules\extendedHeader\scripts\ExtendedOnPageEditing.js" />
+    <Content Include="modules\extendedHeader\scripts\ExtendedSettingPanel.js" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
     <Content Include="Resources\LanguageFiles\Display.xml" />
     <Content Include="Resources\LanguageFiles\ContentTypeNames.xml">
@@ -477,6 +485,7 @@
     <Content Include="modules\_protected\Shell\Shell.zip" />
     <Content Include="modules\_protected\CMS\web.config" />
     <Content Include="modules\_protected\CMS\CMS.zip" />
+    <Content Include="modules\extendedHeader\module.config" />
     <None Include="Views\_ReadMe.txt" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
