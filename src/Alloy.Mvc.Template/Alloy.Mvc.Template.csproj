@@ -327,6 +327,7 @@
     <Compile Include="Business\Initialization\DisplayModesInitialization.cs" />
     <Compile Include="Business\Initialization\DisplayRegistryInitialization.cs" />
     <Compile Include="Business\Initialization\FilterConfig.cs" />
+    <Compile Include="Business\Initialization\TabIconsInitialization.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Models\Pages\ISearchPage.cs" />
     <Compile Include="Business\PageViewContextFactory.cs" />
@@ -538,6 +539,7 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
+    <Folder Include="TabIcon\" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
@@ -563,5 +565,11 @@
   <ItemGroup>
     <NugetPackage Include="Alloy.Mvc.Template.Search.Sources.nuspec" />
     <NugetPackage Include="Alloy.Mvc.Template.Sources.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Alloy.EditModeTabIcon\Alloy.EditModeTabIcon.csproj">
+      <Project>{05156634-c2cb-4512-97e9-432478f2b29d}</Project>
+      <Name>Alloy.EditModeTabIcon</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
