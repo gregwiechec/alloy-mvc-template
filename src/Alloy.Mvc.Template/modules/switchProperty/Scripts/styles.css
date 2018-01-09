@@ -1,0 +1,73 @@
+.Sleek .mblSwitchBgRight {
+    color: white;
+}
+
+.colorDefaultLeft .mblSwitchBgLeft {
+  background: linear-gradient(#3bbaf7, #1ba4fa);
+}
+
+/*Primary*/
+.colorPrimaryLeft .mblSwitchBgLeft {
+  background: linear-gradient(#3bbaf7, #1ba4fa);
+}
+
+.colorPrimaryRight .mblSwitchBgRight {
+  background: linear-gradient(#3bbaf7, #1ba4fa);
+}
+
+/*Success*/
+.colorSuccessLeft .mblSwitchBgLeft {
+  background: linear-gradient(#95c532, #b4d633);
+}
+
+.colorSuccessRight .mblSwitchBgRight {
+  background: linear-gradient(#95c532, #b4d633);
+}
+
+/*Warning*/
+.colorWarningLeft .mblSwitchBgLeft {
+  background: linear-gradient(#ffac2a , #ff9702);
+}
+
+.colorWarningRight .mblSwitchBgRight {
+  background: linear-gradient(#ffac2a , #ff9702);
+}
+
+/*Danger*/
+.colorDangerLeft .mblSwitchBgLeft {
+  background: linear-gradient(#fa6945, #f7542b);
+}
+
+.colorDangerRight .mblSwitchBgRight {
+  background: linear-gradient(#fa6945, #f7542b);
+}
+
+/*Info*/
+.colorInfoLeft .mblSwitchBgLeft {
+  background: linear-gradient(#fff147, #ffee25);
+}
+
+.colorInfoRight .mblSwitchBgRight {
+  background: linear-gradient(#fff147, #ffee25);
+}
+
+.additional-text {
+    float: right;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+
+/*
+.color1 .mblSwitchBgRight {
+  background: -webkit-gradient(linear, left top, left bottom,
+                               from(#CECECE), to(#FDFDFD),
+                               color-stop(0.5, #EEEEEE),
+                               color-stop(0.5, #F8F8F8));
+}
+.color1 .mblSwitchKnob {
+  background: -webkit-gradient(linear, left top, left bottom,
+                               from(#999999), to(#FAFAFA),
+                               color-stop(0.5, #BBBBBB),
+                               color-stop(0.5, #CACACA));
+}
+*/

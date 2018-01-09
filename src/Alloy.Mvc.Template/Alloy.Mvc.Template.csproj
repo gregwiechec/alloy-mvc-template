@@ -408,6 +408,13 @@
     <Content Include="favicon.ico" />
     <None Include="Models\Blocks\_ReadMe.txt" />
     <None Include="Models\Pages\_ReadMe.txt" />
+    <Content Include="modules\switchProperty\Scripts\dojox\mobile\sniff.js" />
+    <Content Include="modules\switchProperty\Scripts\dojox\mobile\Switch.js" />
+    <Content Include="modules\switchProperty\Scripts\dojox\mobile\themes\base.css" />
+    <Content Include="modules\switchProperty\Scripts\dojox\mobile\themes\common.css" />
+    <Content Include="modules\switchProperty\Scripts\dojox\mobile\themes\Switch.css" />
+    <Content Include="modules\switchProperty\Scripts\styles.css" />
+    <Content Include="modules\switchProperty\Scripts\switchEditor.js" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
     <Content Include="Resources\LanguageFiles\Display.xml" />
     <Content Include="Resources\LanguageFiles\ContentTypeNames.xml">
@@ -477,6 +484,9 @@
     <Content Include="modules\_protected\Shell\Shell.zip" />
     <Content Include="modules\_protected\CMS\web.config" />
     <Content Include="modules\_protected\CMS\CMS.zip" />
+    <Content Include="modules\switchProperty\module.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Views\_ReadMe.txt" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
@@ -563,5 +573,11 @@
   <ItemGroup>
     <NugetPackage Include="Alloy.Mvc.Template.Search.Sources.nuspec" />
     <NugetPackage Include="Alloy.Mvc.Template.Sources.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Alloy.SwitchProperty\Alloy.SwitchProperty.csproj">
+      <Project>{d943e563-e8f5-45d0-a16d-5e24e431c1f3}</Project>
+      <Name>Alloy.SwitchProperty</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

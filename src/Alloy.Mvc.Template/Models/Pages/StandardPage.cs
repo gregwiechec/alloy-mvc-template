@@ -2,6 +2,7 @@
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using System.ComponentModel.DataAnnotations;
+ using Alloy.SwitchProperty;
 
 namespace AlloyTemplates.Models.Pages
 {
@@ -22,5 +23,17 @@ namespace AlloyTemplates.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 320)]
         public virtual ContentArea MainContentArea { get; set; }
+
+        [Display(Name= "Use custom layout", GroupName = SystemTabNames.Content, Order = 400)]
+        [UIHint(SwitchEditorDescriptor.UIHint)]
+        [SwitchSettings(Shape = Shapes.Arc2, TrueStateClass = StateClasses.Warning, FalseStateClass = StateClasses.Info,
+            TrueText = "Custom layout", FalseText = "Default layout",
+            TrueDescriptionText = "Please note that custom layout requires additional styles configuration", Width = "170px")]
+        public virtual bool UseCustomLayout { get; set; }
+
+        [Display(Name = "Show main banner", GroupName = SystemTabNames.Content, Order = 500)]
+        [UIHint(SwitchEditorDescriptor.UIHint)]
+        [SwitchSettings(Shape = Shapes.Square, TrueText = "Yes", FalseText = "No")]
+        public virtual bool ShowMainBanner { get; set; }
     }
 }
