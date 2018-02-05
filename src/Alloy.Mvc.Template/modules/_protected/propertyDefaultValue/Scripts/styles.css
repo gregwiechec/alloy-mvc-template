@@ -1,0 +1,50 @@
+﻿.ui-widget-content .ui-state-default.dgrid-equal-item-values {
+    color: #c0c0c0;
+    font-style: italic;
+    cursor: not-allowed;
+}
+
+.epi-dialog-portrait.property-revert-grid-dialog {
+  width: 700px;
+}
+
+.Sleek .property-revert .epi-resourceInputContainer .epi-resourceName.dojoxEllipsis {
+    max-width: 90% !important;
+}
+
+.Sleek .property-revert .filter {
+    margin-right: 5px;
+}
+
+.property-revert .filtersContainer {
+    padding-bottom: 10px;
+}
+
+.property-revert .dijitDialogPaneContentArea {
+    padding-bottom: 0;
+}
+
+.property-revert .filtersContainer .language-selector {
+    width: 140px;
+}
+
+.property-revert .filtersContainer .content-selector .dijitTextBox {
+    width: 170px;
+}
+
+.property-revert .dgrid-hider-toggle {
+    display: none;
+}
+
+.property-revert .fixed-column {
+    width: 90px;
+}
+
+
+.Sleek .epi-form-container__section__row>label>span.epi-iconUndo {
+    display: none;
+}
+
+.Sleek .epi-form-container__section__row:hover>label>span.epi-iconUndo {
+    display: inline-block;
+}

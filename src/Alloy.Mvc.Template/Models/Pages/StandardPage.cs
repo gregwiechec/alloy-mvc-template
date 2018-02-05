@@ -1,7 +1,9 @@
-﻿﻿using EPiServer.Core;
+﻿﻿using System.Collections.Generic;
+ using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using System.ComponentModel.DataAnnotations;
+ using Alloy.RevertDefaultValues;
 
 namespace AlloyTemplates.Models.Pages
 {
@@ -22,5 +24,28 @@ namespace AlloyTemplates.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 320)]
         public virtual ContentArea MainContentArea { get; set; }
+
+        [Display(Name="String property 1", GroupName = SystemTabNames.Content, Order = 500)]
+        [AllowRevertToDefault]
+        public virtual string TestString1 { get; set; }
+
+        [Display(Name="String property 2", GroupName = SystemTabNames.Content, Order = 510)]
+        [AllowRevertToDefault]
+        [CultureSpecific]
+        public virtual string TestString2 { get; set; }
+
+        [Display(Name="Test ContentArea", GroupName = SystemTabNames.Content, Order = 510)]
+        [AllowRevertToDefault]
+        [CultureSpecific]
+        public virtual ContentArea TestContentArea { get; set; }
+
+        public override void SetDefaultValues(ContentType contentType)
+        {
+            base.SetDefaultValues(contentType);
+            this.TestString1 = "test value 123";
+            this.TestContentArea = new ContentArea();
+            this.TestContentArea.Items.Add(new ContentAreaItem { ContentLink = ContentReference.StartPage, RenderSettings = new Dictionary<string, object>()});
+            this.TestContentArea.Items.Add(new ContentAreaItem { ContentLink = new ContentReference(7), RenderSettings = new Dictionary<string, object>()});
+        }
     }
 }
