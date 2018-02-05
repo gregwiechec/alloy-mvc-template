@@ -1,0 +1,18 @@
+﻿<div class="property-revert">
+    <div data-dojo-attach-point="filtersContainer" class="filtersContainer">
+        <div>
+            <div class="dijitInline filter">
+                <label>Language:</label>
+                <div data-dojo-attach-point="languageSelector" class="language-selector" data-dojo-type="epi-cms/contentediting/editors/SelectionEditor"></div>
+            </div>
+            <div class="dijitInline filter">
+                <label>Content:</label>
+                <div class="content-selector" data-dojo-attach-point="contentSelector" data-dojo-type="epi-cms/widget/ContentSelector"></div>
+            </div>
+            <div class="dijitInline filter">
+                <label><input data-dojo-attach-point="showAllVersions" tooltip="test 12345544321" data-dojo-type="dijit/form/CheckBox" />Show all versions</label>
+            </div>
+        </div>
+    </div>
+    <div data-dojo-type="propertyDefaultValue/propertyVersionsGrid" data-dojo-attach-point="grid"></div>
+</div>

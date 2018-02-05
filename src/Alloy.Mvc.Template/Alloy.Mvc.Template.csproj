@@ -408,6 +408,12 @@
     <Content Include="favicon.ico" />
     <None Include="Models\Blocks\_ReadMe.txt" />
     <None Include="Models\Pages\_ReadMe.txt" />
+    <Content Include="modules\_protected\propertyDefaultValue\Scripts\propertyVersions.html" />
+    <Content Include="modules\_protected\propertyDefaultValue\Scripts\styles.css" />
+    <Content Include="modules\_protected\propertyDefaultValue\Scripts\propertyVersionsGrid.js" />
+    <Content Include="modules\_protected\propertyDefaultValue\Scripts\propertyVersions.js" />
+    <Content Include="modules\_protected\propertyDefaultValue\Scripts\fieldFactory.js" />
+    <Content Include="modules\_protected\propertyDefaultValue\Scripts\initializer.js" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
     <Content Include="Resources\LanguageFiles\Display.xml" />
     <Content Include="Resources\LanguageFiles\ContentTypeNames.xml">
@@ -477,6 +483,9 @@
     <Content Include="modules\_protected\Shell\Shell.zip" />
     <Content Include="modules\_protected\CMS\web.config" />
     <Content Include="modules\_protected\CMS\CMS.zip" />
+    <Content Include="modules\_protected\propertyDefaultValue\module.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Views\_ReadMe.txt" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
@@ -563,5 +572,11 @@
   <ItemGroup>
     <NugetPackage Include="Alloy.Mvc.Template.Search.Sources.nuspec" />
     <NugetPackage Include="Alloy.Mvc.Template.Sources.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Alloy.RevertDefaultValues\Alloy.RevertDefaultValues.csproj">
+      <Project>{ec21eda7-1e2a-473a-8b48-9f12254194a7}</Project>
+      <Name>Alloy.RevertDefaultValues</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
