@@ -322,12 +322,15 @@
     <Compile Include="Business\Channels\MobileChannel.cs" />
     <Compile Include="Business\Channels\WebChannel.cs" />
     <Compile Include="Business\Initialization\BundleConfig.cs" />
+    <Compile Include="Business\Initialization\PageConversionMappingsInitialization.cs" />
     <Compile Include="Business\Initialization\CustomizedRenderingInitialization.cs" />
     <Compile Include="Business\Initialization\DependencyResolverInitialization.cs" />
     <Compile Include="Business\Initialization\DisplayModesInitialization.cs" />
     <Compile Include="Business\Initialization\DisplayRegistryInitialization.cs" />
     <Compile Include="Business\Initialization\FilterConfig.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Models\Pages\CustomerPage.cs" />
+    <Compile Include="Models\Pages\EmployeePage.cs" />
     <Compile Include="Models\Pages\ISearchPage.cs" />
     <Compile Include="Business\PageViewContextFactory.cs" />
     <Compile Include="Business\Rendering\ErrorHandlingContentRenderer.cs" />
@@ -408,6 +411,9 @@
     <Content Include="favicon.ico" />
     <None Include="Models\Blocks\_ReadMe.txt" />
     <None Include="Models\Pages\_ReadMe.txt" />
+    <Content Include="modules\_protected\editModePageConverter\Scripts\commandsProvider.js" />
+    <Content Include="modules\_protected\editModePageConverter\Scripts\convertPageCommand.js" />
+    <Content Include="modules\_protected\editModePageConverter\Scripts\initializer.js" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
     <Content Include="Resources\LanguageFiles\Display.xml" />
     <Content Include="Resources\LanguageFiles\ContentTypeNames.xml">
@@ -477,6 +483,9 @@
     <Content Include="modules\_protected\Shell\Shell.zip" />
     <Content Include="modules\_protected\CMS\web.config" />
     <Content Include="modules\_protected\CMS\CMS.zip" />
+    <Content Include="modules\_protected\editModePageConverter\module.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Views\_ReadMe.txt" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
@@ -563,5 +572,11 @@
   <ItemGroup>
     <NugetPackage Include="Alloy.Mvc.Template.Search.Sources.nuspec" />
     <NugetPackage Include="Alloy.Mvc.Template.Sources.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Alloy.EditModePageConverter\Alloy.EditModePageConverter.csproj">
+      <Project>{d5c898c2-1e7a-4cea-bf4c-6c7f491c07e9}</Project>
+      <Name>Alloy.EditModePageConverter</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
