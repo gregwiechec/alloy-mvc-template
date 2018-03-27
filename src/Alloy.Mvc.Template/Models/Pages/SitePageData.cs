@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Alloy.HideTabs.VisibilityAttributes;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
@@ -49,6 +50,7 @@ namespace AlloyTemplates.Models.Pages
             GroupName = Global.GroupNames.MetaData,
             Order = 400)]
         [CultureSpecific]
+        [ShowPropertyWhenValueEquals(nameof(MetaDescription), true)]
         public virtual bool DisableIndexing { get; set; }
 
         [Display(

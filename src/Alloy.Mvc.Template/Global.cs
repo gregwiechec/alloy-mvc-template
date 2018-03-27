@@ -36,6 +36,12 @@ namespace AlloyTemplates
 
             [Display(Name = "Specialized", Order = 7)]
             public const string Specialized = "Specialized";
+
+            [Display(Name = "Recipe", Order = 11)]
+            public const string Recipe = "Recipe";
+
+            [Display(Name = "Sponsored", Order = 12)]
+            public const string Sponsored = "Sponsored";
         }
 
         /// <summary>

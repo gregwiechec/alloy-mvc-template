@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Grzegorz Wiecheć</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://gregwiechec.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Allow to hide tab and properties based on conditions</description>
+    <copyright>$copyright$</copyright>
+    <tags>EPiServer Edit-mode</tags>
+    <dependencies>
+      <dependency id="EPiServer.CMS.UI.Core" version="[11.1.0, 12.0.0)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Readme.txt" target="" />
+    <file src="alloy.hideTabs/web.config.transform" target="Content" />
+    <file src="alloy.hideTabs/alloy.hideTabs.zip" target="Content\modules\_protected\alloy.hideTabs" />
+  </files>
+</package>
