@@ -1,7 +1,8 @@
-﻿﻿using EPiServer.Core;
+﻿using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using System.ComponentModel.DataAnnotations;
+ using Alloy.GroupingHeader;
 
 namespace AlloyTemplates.Models.Pages
 {
@@ -16,6 +17,7 @@ namespace AlloyTemplates.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 310)]
         [CultureSpecific]
+        [GroupingHeader("Test Test Test Test Test Test Test Test Test Test")]
         public virtual XhtmlString MainBody { get; set; }
 
         [Display(

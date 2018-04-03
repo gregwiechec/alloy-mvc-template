@@ -1,0 +1,12 @@
+/* Default syles */
+.epi-form-container__section__row.grouping-header {
+    padding-top: 7px;
+    padding-bottom: 4px;
+    min-height: auto;
+}
+
+    .epi-form-container__section__row.grouping-header > h3 {
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+    }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <languages>
-  <language name="English" id="en">
+  <language name="svenska" id="sv">
     <contenttypes>
       <icontentdata>
         <properties>
@@ -49,8 +49,8 @@
       <testpage>
         <properties>
           <testg11>
-            <groupingheader>Company address (EN)</groupingheader>
-            <caption>Street (EN)</caption>
+            <groupingheader>Company address 1 (SV)</groupingheader>
+            <caption>Street (SV)</caption>
           </testg11>
         </properties>
       </testpage>

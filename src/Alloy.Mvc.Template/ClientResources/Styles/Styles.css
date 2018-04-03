@@ -1,4 +1,4 @@
-﻿@import url("LayoutIcons.css");
+@import url("LayoutIcons.css");
 
 .epiStringList .dijitTextArea {
     width: 250px;
@@ -6,4 +6,38 @@
 
 .epiStringList .epiStringListError .dijitTextArea {
     border: solid 1px #d46464;
+}
+
+.address-group, .emails-group, .press-group {
+    background-color: #d0d0d0;
+}
+
+    .address-group > h3:before, .emails-group > h3:before, .press-group > h3:before {
+        content: " ";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        float: left;
+        margin-right: 5px;
+        background: url(/EPiServer/Shell/11.1.0.0/ClientResources/epi/themes/sleek/epi/images/icons/commonIcons24x24.png) 0 -288px no-repeat;
+    }
+
+.address-group > h3 {
+    font-style: italic
+}
+
+.emails-group > h3 {
+    color: red;
+}
+
+.emails-group > h3:before {
+    background-position-y: -192px;
+}
+
+.press-group > h3 {
+    font-family: "Courier new"
+}
+
+.address-group > h3:before {
+    background-position-y: -96px;
 }

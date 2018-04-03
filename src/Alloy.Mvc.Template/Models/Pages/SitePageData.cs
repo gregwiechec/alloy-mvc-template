@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Alloy.GroupingHeader;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
@@ -62,6 +63,7 @@ namespace AlloyTemplates.Models.Pages
             Order = 200)]
         [CultureSpecific]
         [UIHint(UIHint.Textarea)]
+        [GroupingHeader("ABC ABC ABC")]
         public virtual string TeaserText
         {
             get

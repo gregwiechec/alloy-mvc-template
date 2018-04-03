@@ -1,4 +1,6 @@
-# Alloy MVC Template
+# Alloy MVC Template - grouping-header
+
+# Grouping properties using header
 
 ## Setup the Development Environment
 1. Run `setup.cmd`

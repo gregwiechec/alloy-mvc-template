@@ -380,6 +380,7 @@
     <Compile Include="Models\Pages\NewsPage.cs" />
     <Compile Include="Models\Pages\ProductPage.cs" />
     <Compile Include="Models\Pages\SitePageData.cs" />
+    <Compile Include="Models\Pages\TestPage.cs" />
     <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Models\Properties\PropertyStringList.cs" />
@@ -415,6 +416,9 @@
     </Content>
     <Content Include="Resources\LanguageFiles\EditorHints.xml" />
     <Content Include="Resources\LanguageFiles\GroupNames.xml" />
+    <Content Include="Resources\LanguageFiles\PropertyNames_SV.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Resources\LanguageFiles\PropertyNames.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -563,5 +567,11 @@
   <ItemGroup>
     <NugetPackage Include="Alloy.Mvc.Template.Search.Sources.nuspec" />
     <NugetPackage Include="Alloy.Mvc.Template.Sources.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Alloy.GroupingHeader\Alloy.GroupingHeader.csproj">
+      <Project>{20118f27-a969-4cb4-8284-4dae94a29b00}</Project>
+      <Name>Alloy.GroupingHeader</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
