@@ -1,5 +1,7 @@
 # Alloy MVC Template
 
+# Allow to D&D blocks on the local blocks
+
 ## Setup the Development Environment
 1. Run `setup.cmd`
 2. Build the solution in Visual Studio

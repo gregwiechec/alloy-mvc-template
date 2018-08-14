@@ -1,0 +1,13 @@
+.block-drop-area {
+    border: 2px dashed rgba(180,198,0,1);
+    position: absolute;
+    left: 2px;
+    top: 0;
+    right: 2px;
+    bottom: 0;
+    display: none;
+}
+
+.block-drop-area.dnd-disabled {
+    border-color: #DDD;
+}
