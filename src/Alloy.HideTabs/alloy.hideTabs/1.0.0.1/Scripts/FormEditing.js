@@ -43,7 +43,12 @@ define([
                     propertyName = propertyName.toLowerCase();
                     var property = this.viewModel.metadata.properties.filter(function (p) {
                         return p.name.toLowerCase() === propertyName;
-                    })[0];
+                    });
+                    if (!property || property.length === 0) {
+                        return;
+                    }
+
+                    property = property[0];
 
                     if (property.customEditorSettings.requiresLayoutRefresh) {
                         this._refreshHiddenElements();

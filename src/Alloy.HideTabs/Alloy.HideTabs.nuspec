@@ -19,6 +19,7 @@
   <files>
     <file src="Readme.txt" target="" />
     <file src="alloy.hideTabs/web.config.transform" target="Content" />
-    <file src="alloy.hideTabs/alloy.hideTabs.zip" target="Content\modules\_protected\alloy.hideTabs" />
+    <file src="alloy.hideTabs/module.config" target="Content/modules/_protected/alloy.hideTabs/" />
+    <file src="alloy.hideTabs/alloy.hideTabs.zip" target="Content/modules/_protected/alloy.hideTabs/" />
   </files>
 </package>

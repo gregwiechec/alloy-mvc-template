@@ -221,9 +221,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="alloy.hideTabs\1.0.0.0\Scripts\FormEditing.js" />
-    <None Include="alloy.hideTabs\1.0.0.0\Scripts\initializer.js" />
-    <None Include="alloy.hideTabs\1.0.0.0\Scripts\styles.css" />
+    <None Include="alloy.hideTabs\1.0.0.1\Scripts\FormEditing.js" />
+    <None Include="alloy.hideTabs\1.0.0.1\Scripts\initializer.js" />
+    <None Include="alloy.hideTabs\1.0.0.1\Scripts\styles.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
